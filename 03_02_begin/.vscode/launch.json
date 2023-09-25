@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Application-dev",
+            "request": "launch",
+            "mainClass": "com.frankmoley.lil.fid.Application",
+            "projectName": "spring-framework-in-depth",
+            "vmArgs": "-Dspring.profiles.active=dev"
+        },
+        {
+            "type": "java",
+            "name": "Application-prod",
+            "request": "launch",
+            "mainClass": "com.frankmoley.lil.fid.Application",
+            "projectName": "spring-framework-in-depth",
+            "vmArgs": "-Dspring.profiles.active=prod"
+        }
+    ]
+}
